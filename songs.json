@@ -1,0 +1,708 @@
+{
+    "playlist": {
+        "name": "100 YouTube Songs",
+        "total_songs": 100,
+        "songs": [
+            {
+                "id": 1,
+                "artist": "The Weeknd",
+                "title": "Blinding Lights",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=4NRXx6U8ABQ"
+            },
+            {
+                "id": 2,
+                "artist": "Dua Lipa",
+                "title": "Levitating",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=TUVcZfQe-Kw"
+            },
+            {
+                "id": 3,
+                "artist": "Ed Sheeran",
+                "title": "Shape of You",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=JGwWNGJdvx8"
+            },
+            {
+                "id": 4,
+                "artist": "Billie Eilish",
+                "title": "bad guy",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=DyDfgMOUjCI"
+            },
+            {
+                "id": 5,
+                "artist": "Lady Gaga",
+                "title": "Bad Romance",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=qrO4YZeyl0I"
+            },
+            {
+                "id": 6,
+                "artist": "Ariana Grande",
+                "title": "7 rings",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=QYh6mYIJG2Y"
+            },
+            {
+                "id": 7,
+                "artist": "Bruno Mars",
+                "title": "Uptown Funk",
+                "genre": "Pop/Funk",
+                "url": "https://www.youtube.com/watch?v=OPf0YbXqDm0"
+            },
+            {
+                "id": 8,
+                "artist": "Olivia Rodrigo",
+                "title": "good 4 u",
+                "genre": "Pop Rock",
+                "url": "https://www.youtube.com/watch?v=gNi_6U5Pm_o"
+            },
+            {
+                "id": 9,
+                "artist": "Harry Styles",
+                "title": "As It Was",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=H5v3kku4y6Q"
+            },
+            {
+                "id": 10,
+                "artist": "Taylor Swift",
+                "title": "Shake It Off",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=nfWlot6h_JM"
+            },
+            {
+                "id": 11,
+                "artist": "Queen",
+                "title": "Bohemian Rhapsody",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
+            },
+            {
+                "id": 12,
+                "artist": "Nirvana",
+                "title": "Smells Like Teen Spirit",
+                "genre": "Grunge",
+                "url": "https://www.youtube.com/watch?v=hTWKbfoikeg"
+            },
+            {
+                "id": 13,
+                "artist": "Imagine Dragons",
+                "title": "Radioactive",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+            },
+            {
+                "id": 14,
+                "artist": "Coldplay",
+                "title": "Viva La Vida",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=dvgZkm1xWPE"
+            },
+            {
+                "id": 15,
+                "artist": "Linkin Park",
+                "title": "In The End",
+                "genre": "Nu Metal",
+                "url": "https://www.youtube.com/watch?v=eVTXPUF4Oz4"
+            },
+            {
+                "id": 16,
+                "artist": "Red Hot Chili Peppers",
+                "title": "Californication",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=YlUKcNNmywk"
+            },
+            {
+                "id": 17,
+                "artist": "Foo Fighters",
+                "title": "Everlong",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=eBG7P-K-r1Y"
+            },
+            {
+                "id": 18,
+                "artist": "Green Day",
+                "title": "Boulevard of Broken Dreams",
+                "genre": "Punk Rock",
+                "url": "https://www.youtube.com/watch?v=Soa3gO7tL-c"
+            },
+            {
+                "id": 19,
+                "artist": "The Killers",
+                "title": "Mr. Brightside",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=gGdGFtwCNBE"
+            },
+            {
+                "id": 20,
+                "artist": "Arctic Monkeys",
+                "title": "Do I Wanna Know?",
+                "genre": "Indie Rock",
+                "url": "https://www.youtube.com/watch?v=bpOSxM0rNPM"
+            },
+            {
+                "id": 21,
+                "artist": "Eminem",
+                "title": "Lose Yourself",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=_Yhyp-_hX2s"
+            },
+            {
+                "id": 22,
+                "artist": "Drake",
+                "title": "God's Plan",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=xpVfcZ0ZcFM"
+            },
+            {
+                "id": 23,
+                "artist": "Kendrick Lamar",
+                "title": "HUMBLE.",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=tvTRZJ-4EyI"
+            },
+            {
+                "id": 24,
+                "artist": "Post Malone",
+                "title": "Circles",
+                "genre": "Pop/Hip Hop",
+                "url": "https://www.youtube.com/watch?v=wXhTHyIgQ_U"
+            },
+            {
+                "id": 25,
+                "artist": "Travis Scott",
+                "title": "SICKO MODE",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=6ONRf7h3Mdk"
+            },
+            {
+                "id": 26,
+                "artist": "Kanye West",
+                "title": "Stronger",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=PsO6ZnUZI0g"
+            },
+            {
+                "id": 27,
+                "artist": "Jay-Z & Alicia Keys",
+                "title": "Empire State of Mind",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=0UjsXo9l6I8"
+            },
+            {
+                "id": 28,
+                "artist": "Cardi B",
+                "title": "Bodak Yellow",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=PEGccV-NOm8"
+            },
+            {
+                "id": 29,
+                "artist": "Nicki Minaj",
+                "title": "Super Bass",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=4JipHEz53sU"
+            },
+            {
+                "id": 30,
+                "artist": "50 Cent",
+                "title": "In Da Club",
+                "genre": "Hip Hop",
+                "url": "https://www.youtube.com/watch?v=5qm8PH4xAss"
+            },
+            {
+                "id": 31,
+                "artist": "Calvin Harris",
+                "title": "Summer",
+                "genre": "EDM",
+                "url": "https://www.youtube.com/watch?v=ebXbLfLACGM"
+            },
+            {
+                "id": 32,
+                "artist": "Avicii",
+                "title": "Wake Me Up",
+                "genre": "EDM",
+                "url": "https://www.youtube.com/watch?v=IcrbM1l_BoI"
+            },
+            {
+                "id": 33,
+                "artist": "David Guetta",
+                "title": "Titanium",
+                "genre": "EDM",
+                "url": "https://www.youtube.com/watch?v=JRfuAukYTKg"
+            },
+            {
+                "id": 34,
+                "artist": "Martin Garrix",
+                "title": "Animals",
+                "genre": "EDM",
+                "url": "https://www.youtube.com/watch?v=gCYcHz2k5x0"
+            },
+            {
+                "id": 35,
+                "artist": "Marshmello",
+                "title": "Alone",
+                "genre": "EDM",
+                "url": "https://www.youtube.com/watch?v=ALZHF5UqnU4"
+            },
+            {
+                "id": 36,
+                "artist": "Daft Punk",
+                "title": "Get Lucky",
+                "genre": "Electronic",
+                "url": "https://www.youtube.com/watch?v=5NV6Rdv1a3I"
+            },
+            {
+                "id": 37,
+                "artist": "The Chainsmokers",
+                "title": "Closer",
+                "genre": "EDM/Pop",
+                "url": "https://www.youtube.com/watch?v=PT2_F-1esPk"
+            },
+            {
+                "id": 38,
+                "artist": "Kygo",
+                "title": "Firestone",
+                "genre": "Tropical House",
+                "url": "https://www.youtube.com/watch?v=9Sc-ir2UwGU"
+            },
+            {
+                "id": 39,
+                "artist": "Zedd",
+                "title": "Clarity",
+                "genre": "EDM",
+                "url": "https://www.youtube.com/watch?v=IxxstCcJlsc"
+            },
+            {
+                "id": 40,
+                "artist": "Deadmau5",
+                "title": "Strobe",
+                "genre": "Progressive House",
+                "url": "https://www.youtube.com/watch?v=tKi9Z-f6qX4"
+            },
+            {
+                "id": 41,
+                "artist": "Adele",
+                "title": "Someone Like You",
+                "genre": "Soul/Pop",
+                "url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0"
+            },
+            {
+                "id": 42,
+                "artist": "Sam Smith",
+                "title": "Stay With Me",
+                "genre": "Soul/Pop",
+                "url": "https://www.youtube.com/watch?v=pB-5XG-DbAA"
+            },
+            {
+                "id": 43,
+                "artist": "John Legend",
+                "title": "All of Me",
+                "genre": "R&B",
+                "url": "https://www.youtube.com/watch?v=450p7goxZqg"
+            },
+            {
+                "id": 44,
+                "artist": "Beyoncé",
+                "title": "Halo",
+                "genre": "R&B/Pop",
+                "url": "https://www.youtube.com/watch?v=bnVUHWCynig"
+            },
+            {
+                "id": 45,
+                "artist": "Rihanna",
+                "title": "Diamonds",
+                "genre": "Pop/R&B",
+                "url": "https://www.youtube.com/watch?v=lWA2pjMjpBs"
+            },
+            {
+                "id": 46,
+                "artist": "Whitney Houston",
+                "title": "I Will Always Love You",
+                "genre": "Pop/Soul",
+                "url": "https://www.youtube.com/watch?v=3JWTaaS7LdU"
+            },
+            {
+                "id": 47,
+                "artist": "Alicia Keys",
+                "title": "If I Ain't Got You",
+                "genre": "R&B",
+                "url": "https://www.youtube.com/watch?v=Ju8Hr50Ckwk"
+            },
+            {
+                "id": 48,
+                "artist": "Amy Winehouse",
+                "title": "Back to Black",
+                "genre": "Soul",
+                "url": "https://www.youtube.com/watch?v=TJAfLE39ZZ8"
+            },
+            {
+                "id": 49,
+                "artist": "Maroon 5",
+                "title": "Sugar",
+                "genre": "Pop Rock",
+                "url": "https://www.youtube.com/watch?v=09R8_2nJtjg"
+            },
+            {
+                "id": 50,
+                "artist": "Justin Timberlake",
+                "title": "Can't Stop the Feeling!",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=ru0K8uYEZWw"
+            },
+            {
+                "id": 51,
+                "artist": "Michael Jackson",
+                "title": "Billie Jean",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
+            },
+            {
+                "id": 52,
+                "artist": "The Beatles",
+                "title": "Hey Jude",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=A_MjCqQoLLA"
+            },
+            {
+                "id": 53,
+                "artist": "Elvis Presley",
+                "title": "Can't Help Falling in Love",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=vGJTaP6anOU"
+            },
+            {
+                "id": 54,
+                "artist": "Bob Marley",
+                "title": "Three Little Birds",
+                "genre": "Reggae",
+                "url": "https://www.youtube.com/watch?v=zaGUr6wzyT8"
+            },
+            {
+                "id": 55,
+                "artist": "Elton John",
+                "title": "Rocket Man",
+                "genre": "Pop Rock",
+                "url": "https://www.youtube.com/watch?v=DtVBCG6ThDk"
+            },
+            {
+                "id": 56,
+                "artist": "David Bowie",
+                "title": "Space Oddity",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=iYYRH4apXDo"
+            },
+            {
+                "id": 57,
+                "artist": "Led Zeppelin",
+                "title": "Stairway to Heaven",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=QkF3oxziUI4"
+            },
+            {
+                "id": 58,
+                "artist": "Pink Floyd",
+                "title": "Wish You Were Here",
+                "genre": "Progressive Rock",
+                "url": "https://www.youtube.com/watch?v=IXdNnw99-Ic"
+            },
+            {
+                "id": 59,
+                "artist": "AC/DC",
+                "title": "Back in Black",
+                "genre": "Hard Rock",
+                "url": "https://www.youtube.com/watch?v=pAgnJDJN4VA"
+            },
+            {
+                "id": 60,
+                "artist": "Guns N' Roses",
+                "title": "Sweet Child O' Mine",
+                "genre": "Hard Rock",
+                "url": "https://www.youtube.com/watch?v=1w7OgIMMRc4"
+            },
+            {
+                "id": 61,
+                "artist": "Metallica",
+                "title": "Enter Sandman",
+                "genre": "Metal",
+                "url": "https://www.youtube.com/watch?v=CD-E-LDc384"
+            },
+            {
+                "id": 62,
+                "artist": "Iron Maiden",
+                "title": "The Trooper",
+                "genre": "Heavy Metal",
+                "url": "https://www.youtube.com/watch?v=X4bgXH3sJ2Q"
+            },
+            {
+                "id": 63,
+                "artist": "Black Sabbath",
+                "title": "Paranoid",
+                "genre": "Heavy Metal",
+                "url": "https://www.youtube.com/watch?v=0qanF-91aJo"
+            },
+            {
+                "id": 64,
+                "artist": "System of a Down",
+                "title": "Chop Suey!",
+                "genre": "Alternative Metal",
+                "url": "https://www.youtube.com/watch?v=CSvFpBOe8eY"
+            },
+            {
+                "id": 65,
+                "artist": "Rage Against the Machine",
+                "title": "Killing in the Name",
+                "genre": "Rap Metal",
+                "url": "https://www.youtube.com/watch?v=bWXazVhlyxQ"
+            },
+            {
+                "id": 66,
+                "artist": "Katy Perry",
+                "title": "Roar",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=CevxZvSJLk8"
+            },
+            {
+                "id": 67,
+                "artist": "Miley Cyrus",
+                "title": "Wrecking Ball",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=My2FRPA3Gf8"
+            },
+            {
+                "id": 68,
+                "artist": "Shakira",
+                "title": "Hips Don't Lie",
+                "genre": "Pop/Latin",
+                "url": "https://www.youtube.com/watch?v=DUT5rEU6pqM"
+            },
+            {
+                "id": 69,
+                "artist": "Sia",
+                "title": "Chandelier",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=2vjPBrBU-TM"
+            },
+            {
+                "id": 70,
+                "artist": "P!nk",
+                "title": "Just Give Me a Reason",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=OpQFFLBMEPI"
+            },
+            {
+                "id": 71,
+                "artist": "OneRepublic",
+                "title": "Counting Stars",
+                "genre": "Pop Rock",
+                "url": "https://www.youtube.com/watch?v=hT_nvWreIhg"
+            },
+            {
+                "id": 72,
+                "artist": "The Script",
+                "title": "Hall of Fame",
+                "genre": "Pop Rock",
+                "url": "https://www.youtube.com/watch?v=mk48xRzuNvA"
+            },
+            {
+                "id": 73,
+                "artist": "Passenger",
+                "title": "Let Her Go",
+                "genre": "Folk Pop",
+                "url": "https://www.youtube.com/watch?v=RBumgq5yVrA"
+            },
+            {
+                "id": 74,
+                "artist": "James Blunt",
+                "title": "You're Beautiful",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=oofSnsGkops"
+            },
+            {
+                "id": 75,
+                "artist": "Jason Mraz",
+                "title": "I'm Yours",
+                "genre": "Pop",
+                "url": "https://www.youtube.com/watch?v=EkHTsc9PU2A"
+            },
+            {
+                "id": 76,
+                "artist": "Jack Johnson",
+                "title": "Better Together",
+                "genre": "Folk",
+                "url": "https://www.youtube.com/watch?v=seZMONy1TqQ"
+            },
+            {
+                "id": 77,
+                "artist": "Mumford & Sons",
+                "title": "I Will Wait",
+                "genre": "Folk Rock",
+                "url": "https://www.youtube.com/watch?v=rGKfrgqWcv0"
+            },
+            {
+                "id": 78,
+                "artist": "The Lumineers",
+                "title": "Ho Hey",
+                "genre": "Folk Rock",
+                "url": "https://www.youtube.com/watch?v=zvCBSSwgtg4"
+            },
+            {
+                "id": 79,
+                "artist": "Of Monsters and Men",
+                "title": "Little Talks",
+                "genre": "Indie Folk",
+                "url": "https://www.youtube.com/watch?v=ghb6eDopW8I"
+            },
+            {
+                "id": 80,
+                "artist": "Florence + The Machine",
+                "title": "Dog Days Are Over",
+                "genre": "Indie Rock",
+                "url": "https://www.youtube.com/watch?v=iWOyfLBYtuU"
+            },
+            {
+                "id": 81,
+                "artist": "MGMT",
+                "title": "Electric Feel",
+                "genre": "Indie Rock",
+                "url": "https://www.youtube.com/watch?v=MmZexg8sxyk"
+            },
+            {
+                "id": 82,
+                "artist": "Tame Impala",
+                "title": "The Less I Know The Better",
+                "genre": "Psychedelic Rock",
+                "url": "https://www.youtube.com/watch?v=sBzrzS1Ag_g"
+            },
+            {
+                "id": 83,
+                "artist": "Two Door Cinema Club",
+                "title": "What You Know",
+                "genre": "Indie Rock",
+                "url": "https://www.youtube.com/watch?v=YXwYJyrKK5A"
+            },
+            {
+                "id": 84,
+                "artist": "Foster the People",
+                "title": "Pumped Up Kicks",
+                "genre": "Indie Pop",
+                "url": "https://www.youtube.com/watch?v=SDTZ7iX4vTQ"
+            },
+            {
+                "id": 85,
+                "artist": "Lorde",
+                "title": "Royals",
+                "genre": "Indie Pop",
+                "url": "https://www.youtube.com/watch?v=nlcIKh6sBtc"
+            },
+            {
+                "id": 86,
+                "artist": "Hozier",
+                "title": "Take Me to Church",
+                "genre": "Indie Rock",
+                "url": "https://www.youtube.com/watch?v=PVjiKRfKpPI"
+            },
+            {
+                "id": 87,
+                "artist": "Glass Animals",
+                "title": "Heat Waves",
+                "genre": "Indie Pop",
+                "url": "https://www.youtube.com/watch?v=mRD0-GxqHVo"
+            },
+            {
+                "id": 88,
+                "artist": "Alt-J",
+                "title": "Breezeblocks",
+                "genre": "Indie Rock",
+                "url": "https://www.youtube.com/watch?v=rVeMiVU77wo"
+            },
+            {
+                "id": 89,
+                "artist": "Twenty One Pilots",
+                "title": "Stressed Out",
+                "genre": "Alternative",
+                "url": "https://www.youtube.com/watch?v=pXRviuL6vMY"
+            },
+            {
+                "id": 90,
+                "artist": "Panic! At The Disco",
+                "title": "High Hopes",
+                "genre": "Pop Rock",
+                "url": "https://www.youtube.com/watch?v=IPXIgEAGe4U"
+            },
+            {
+                "id": 91,
+                "artist": "Fall Out Boy",
+                "title": "Centuries",
+                "genre": "Pop Punk",
+                "url": "https://www.youtube.com/watch?v=LBr7kECsjcQ"
+            },
+            {
+                "id": 92,
+                "artist": "My Chemical Romance",
+                "title": "Welcome to the Black Parade",
+                "genre": "Emo",
+                "url": "https://www.youtube.com/watch?v=RRKJiM9Njr8"
+            },
+            {
+                "id": 93,
+                "artist": "Paramore",
+                "title": "Misery Business",
+                "genre": "Pop Punk",
+                "url": "https://www.youtube.com/watch?v=aCyGvGAIsvQ"
+            },
+            {
+                "id": 94,
+                "artist": "Blink-182",
+                "title": "All the Small Things",
+                "genre": "Pop Punk",
+                "url": "https://www.youtube.com/watch?v=9Ht5RZpzPqw"
+            },
+            {
+                "id": 95,
+                "artist": "Sum 41",
+                "title": "In Too Deep",
+                "genre": "Pop Punk",
+                "url": "https://www.youtube.com/watch?v=emGri7i8Y2Y"
+            },
+            {
+                "id": 96,
+                "artist": "Weezer",
+                "title": "Buddy Holly",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=kemivUKb4f4"
+            },
+            {
+                "id": 97,
+                "artist": "The White Stripes",
+                "title": "Seven Nation Army",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=0J2QdDbelmY"
+            },
+            {
+                "id": 98,
+                "artist": "Muse",
+                "title": "Starlight",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=Pgum6OT_VH8"
+            },
+            {
+                "id": 99,
+                "artist": "Kings of Leon",
+                "title": "Sex on Fire",
+                "genre": "Rock",
+                "url": "https://www.youtube.com/watch?v=RF0HhrwIwp0"
+            },
+            {
+                "id": 100,
+                "artist": "AWOLNATION",
+                "title": "Sail",
+                "genre": "Alternative Rock",
+                "url": "https://www.youtube.com/watch?v=tgIqecROs5M"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "shazam-clone",
+  "version": "1.0.0",
+  "description": "Shazam algorithm implementation using Bun",
+  "scripts": {
+    "parser": "bun run parser.js",
+    "detector": "bun run detector.js",
+    "download": "bun run download_songs.js"
+  },
+  "dependencies": {
+    "meyda": "^5.6.0",
+    "audio-decode": "^2.2.1"
+  },
+  "optionalDependencies": {
+    "@bun/mic": "^0.0.1"
+  }
+}
+

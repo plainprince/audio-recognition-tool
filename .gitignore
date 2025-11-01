@@ -1,0 +1,9 @@
+node_modules/
+audio_input/*
+!audio_input/.gitkeep
+audio_processed/*
+!audio_processed/.gitkeep
+input.*
+*.log
+.DS_Store
+
