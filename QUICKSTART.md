@@ -14,7 +14,7 @@ cp ~/Music/song2.mp3 audio_input/
 Run the parser to process and index them:
 
 ```bash
-bun run parser.js
+bun run parse
 ```
 
 The files will be moved to `audio_processed/` and fingerprints stored in `database.json`.
@@ -23,30 +23,39 @@ The files will be moved to `audio_processed/` and fingerprints stored in `databa
 
 ### Option A: From a file
 
-Create a short clip or copy an audio file as `input.mp3`:
+**Method 1:** Create a short clip or copy an audio file as `input.mp3`:
 
 ```bash
 cp audio_processed/song1.mp3 input.mp3
+bun run detect
 ```
 
-Then detect:
+**Method 2:** Specify any file path directly:
 
 ```bash
-bun run detector.js
+bun index.js --detect --input audio_processed/song1.mp3
+# or from anywhere
+bun index.js --detect --input ~/Music/mysong.mp3
 ```
 
 ### Option B: From microphone
 
-First install the microphone package:
+First install the microphone package and dependencies:
 
 ```bash
-bun add @bun/mic
+# Install mic package
+bun add mic
+
+# Install system dependencies
+brew install sox  # macOS
+# or
+sudo apt-get install alsa-utils  # Linux
 ```
 
 Then run:
 
 ```bash
-bun run detector.js --mic
+bun run detect:mic
 ```
 
 Press Enter when done recording.
@@ -57,16 +66,16 @@ Press Enter when done recording.
 
 ```bash
 # Use 150ms windows with 60% overlap
-bun run parser.js --window 150 --overlap 0.6
+bun index.js --parse --window 150 --overlap 0.6
 
 # Use same settings for detection
-bun run detector.js --window 150 --overlap 0.6
+bun index.js --detect --window 150 --overlap 0.6
 ```
 
 ### Custom paths
 
 ```bash
-bun run parser.js --input-dir ./my_music --processed-dir ./processed --db-path ./my_db.json
+bun index.js --parse --input-dir ./my_music --processed-dir ./processed --db-path ./my_db.json
 ```
 
 ## Tips

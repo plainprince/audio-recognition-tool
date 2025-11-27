@@ -7,6 +7,9 @@ export function parseArgs() {
     inputDir: './audio_input',
     processedDir: './audio_processed',
     dbPath: './database.json',
+    inputPath: null, // for detector input file
+    topResults: 5, // number of top results to show
+    saveMicInput: false, // save mic input for debugging
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -28,7 +31,18 @@ export function parseArgs() {
       case '--db-path':
         config.dbPath = args[++i];
         break;
+      case '--input':
+        config.inputPath = args[++i];
+        break;
+      case '--top':
+        config.topResults = parseInt(args[++i], 10);
+        break;
     }
+  }
+  
+  // Check for flags without values
+  if (args.includes('--save-mic')) {
+    config.saveMicInput = true;
   }
 
   return config;

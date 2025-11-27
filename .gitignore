@@ -1,9 +1,15 @@
 node_modules/
-audio_input/*
+audio_input/*.mp3
+audio_input/*.wav
+audio_input/*.flac
+audio_input/*.ogg
+audio_input/*.m4a
+audio_input/*.mp4
 !audio_input/.gitkeep
 audio_processed/*
 !audio_processed/.gitkeep
 input.*
+mic_input_*.mp3
 *.log
 .DS_Store
 

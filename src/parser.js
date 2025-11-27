@@ -1,6 +1,6 @@
-import { readdir, rename } from 'node:fs/promises';
+import { readdir, rename, unlink } from 'node:fs/promises';
 import { join, basename } from 'node:path';
-import decode from 'audio-decode';
+import { $ } from 'bun';
 import { processAudioToFingerprint } from './algorithm.js';
 import { parseArgs } from './config.js';
 import { existsSync } from 'node:fs';
@@ -24,40 +24,99 @@ function generateId() {
 }
 
 async function processAudioFile(filePath, windowSize, overlap) {
+  const tempWavPath = `/tmp/shazam_temp_${Date.now()}.wav`;
+  
   try {
     console.log(`\nProcessing: ${basename(filePath)}`);
     
-    // Load audio file using audio-decode
-    const file = Bun.file(filePath);
-    const arrayBuffer = await file.arrayBuffer();
-    const audioBuffer = await decode(arrayBuffer);
+    // Convert to WAV using ffmpeg for reliable decoding
+    await $`ffmpeg -i ${filePath} -ar 44100 -ac 1 -y ${tempWavPath}`.quiet();
     
-    // audio-decode returns AudioBuffer with channelData
-    // We'll use the first channel (mono or left channel)
-    const channelData = audioBuffer.getChannelData(0);
+    // Read WAV file manually (simple WAV parser)
+    const wavFile = Bun.file(tempWavPath);
+    const wavBuffer = await wavFile.arrayBuffer();
+    const view = new DataView(wavBuffer);
     
-    const audioData = {
-      audioBuffer: channelData,
-      sampleRate: audioBuffer.sampleRate,
-    };
+    // Parse WAV header
+    // Skip RIFF header (12 bytes), find "fmt " chunk
+    let offset = 12;
+    while (offset < view.byteLength - 8) {
+      const chunkId = String.fromCharCode(
+        view.getUint8(offset),
+        view.getUint8(offset + 1),
+        view.getUint8(offset + 2),
+        view.getUint8(offset + 3)
+      );
+      const chunkSize = view.getUint32(offset + 4, true);
+      
+      if (chunkId === 'fmt ') {
+        // Found format chunk
+        const sampleRate = view.getUint32(offset + 12, true);
+        offset += 8 + chunkSize;
+        
+        // Find data chunk
+        while (offset < view.byteLength - 8) {
+          const dataChunkId = String.fromCharCode(
+            view.getUint8(offset),
+            view.getUint8(offset + 1),
+            view.getUint8(offset + 2),
+            view.getUint8(offset + 3)
+          );
+          const dataChunkSize = view.getUint32(offset + 4, true);
+          
+          if (dataChunkId === 'data') {
+            // Found data chunk - read PCM data
+            const pcmData = new Int16Array(wavBuffer, offset + 8, dataChunkSize / 2);
+            
+            // Convert to Float32Array normalized to [-1, 1]
+            const channelData = new Float32Array(pcmData.length);
+            for (let i = 0; i < pcmData.length; i++) {
+              channelData[i] = pcmData[i] / 32768.0;
+            }
+            
+            const duration = channelData.length / sampleRate;
+            
+            console.log(`Sample rate: ${sampleRate} Hz`);
+            console.log(`Duration: ${duration.toFixed(2)} seconds`);
+            
+            const audioData = {
+              audioBuffer: channelData,
+              sampleRate: sampleRate,
+            };
+            
+            // Process through algorithm
+            const fingerprint = processAudioToFingerprint(audioData, {
+              windowSize,
+              overlap,
+            });
+            
+            return fingerprint;
+          }
+          
+          offset += 8 + dataChunkSize;
+        }
+        
+        throw new Error('No data chunk found in WAV file');
+      }
+      
+      offset += 8 + chunkSize;
+    }
     
-    console.log(`Sample rate: ${audioBuffer.sampleRate} Hz`);
-    console.log(`Duration: ${audioBuffer.duration.toFixed(2)} seconds`);
-    
-    // Process through algorithm
-    const fingerprint = processAudioToFingerprint(audioData, {
-      windowSize,
-      overlap,
-    });
-    
-    return fingerprint;
+    throw new Error('No fmt chunk found in WAV file');
   } catch (error) {
-    console.error(`Error processing ${basename(filePath)}:`, error);
+    console.error(`Error processing ${basename(filePath)}:`, error.message || error);
     return null;
+  } finally {
+    // Clean up temp WAV file
+    try {
+      if (existsSync(tempWavPath)) {
+        await unlink(tempWavPath);
+      }
+    } catch {}
   }
 }
 
-async function main() {
+export async function runParser() {
   const config = parseArgs();
   
   console.log('Shazam Parser');
@@ -144,5 +203,8 @@ async function main() {
   console.log(`Total songs in database: ${database.songs.length}`);
 }
 
-main().catch(console.error);
+// Run directly if this file is executed
+if (import.meta.path === Bun.main) {
+  runParser().catch(console.error);
+}
 
