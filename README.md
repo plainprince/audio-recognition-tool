@@ -1,6 +1,6 @@
-# Shazam Clone
+# Audio Recognition Tool
 
-A Shazam-like audio fingerprinting and recognition system built with Bun, Meyda, and audio-decode.
+An audio fingerprinting and recognition system built with Bun, Meyda, and audio-decode.
 
 ## Installation
 
@@ -59,7 +59,7 @@ bun index.js --parse
 
 This will:
 - Process all audio files in `audio_input/`
-- Generate fingerprints using the Shazam algorithm
+- Generate fingerprints using the recognition algorithm
 - Store them in `database.json`
 - Move processed files to `audio_processed/`
 
@@ -167,10 +167,10 @@ The current implementation should handle databases of ~500-1000 songs efficientl
 ## Project Structure
 
 ```
-shazam/
+audio-recognition-tool/
 ├── index.js           # Main entry point with --parse/--detect flags
 ├── src/
-│   ├── algorithm.js   # Core Shazam algorithm
+│   ├── algorithm.js   # Core recognition algorithm
 │   ├── config.js      # Configuration management
 │   ├── parser.js      # Audio file indexer
 │   └── detector.js    # Song detector

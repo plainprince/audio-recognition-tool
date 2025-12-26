@@ -1,4 +1,4 @@
-# Shazam Algorithm Implementation
+# Recognition Algorithm Implementation
 
 ## Overview
 

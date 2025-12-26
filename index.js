@@ -2,7 +2,7 @@ import { parseArgs, hasFlag } from './src/config.js';
 
 // Show help
 function showHelp() {
-  console.log('Shazam Clone - Audio Fingerprinting');
+  console.log('Audio Recognition Tool - Audio Fingerprinting');
   console.log('=====================================\n');
   console.log('Usage:');
   console.log('  bun index.js --parse      Parse audio files from audio_input/');

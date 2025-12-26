@@ -358,7 +358,7 @@ export async function runDetector() {
   const config = parseArgs();
   const useMic = hasFlag('--mic');
   
-  console.log('Shazam Detector');
+  console.log('Audio Detector');
   console.log('===============');
   console.log(`Database: ${config.dbPath}`);
   console.log(`Window size: ${config.windowSize}ms`);

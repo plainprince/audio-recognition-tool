@@ -1,4 +1,4 @@
-# Debugging Shazam Detection
+# Debugging Audio Detection
 
 ## Problem: Microphone Detection Not Working
 

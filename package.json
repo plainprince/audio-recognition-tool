@@ -1,7 +1,7 @@
 {
-  "name": "shazam-clone",
+  "name": "audio-recognition-tool",
   "version": "1.0.0",
-  "description": "Shazam algorithm implementation using Bun",
+  "description": "Audio recognition algorithm implementation using Bun",
   "scripts": {
     "parse": "bun index.js --parse",
     "detect": "bun index.js --detect",

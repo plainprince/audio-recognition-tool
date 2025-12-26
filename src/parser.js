@@ -119,7 +119,7 @@ async function processAudioFile(filePath, windowSize, overlap) {
 export async function runParser() {
   const config = parseArgs();
   
-  console.log('Shazam Parser');
+  console.log('Audio Parser');
   console.log('=============');
   console.log(`Input directory: ${config.inputDir}`);
   console.log(`Processed directory: ${config.processedDir}`);
